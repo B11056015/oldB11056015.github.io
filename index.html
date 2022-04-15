@@ -1,1 +1,114 @@
-holl 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>科科快餐點餐價格表</title>
+    <!--答案1-->
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: bolder;
+            color: blue;
+            text-align: center;
+        }
+        
+        table {
+            margin: auto;
+        }
+        
+        #tableCaption {
+            border-style: dashed;
+            border-width: 1px;
+        }
+        
+        td {
+            border-style: dotted;
+            border-width: 1px;
+            padding: 10px;
+            color: green;
+        }
+        /* //答案 2D*/
+        
+        .content {
+            color: green;
+            font-family: Arial;
+            font-size: 18px;
+        }
+        
+        #tableTitle {
+            font-weight: bolder;
+            font-size: 18px;
+            color: purple;
+            text-align: center
+        }
+    </style>
+
+    <script>
+        var x = 3,
+            y = 1,
+            z = 5,
+            p = 8,
+            o = 8;
+
+        document.write("<h1>MIS快餐點餐價格表</h1>")
+        document.write("<table>")
+        document.write("<tr>")
+        document.write("<td>")
+        document.write("<br>")
+        document.write("</td>")
+        while (y <= 5) {
+            while (z > 0) {
+                if (o <= 20) {
+
+                    document.write("<td element id=tableTitle>")
+                    document.write(z + "號餐" + "<br> " + o + "元 ")
+                    document.write("</td>")
+                    o += 3
+                    z--
+                }
+            }
+            y++
+        }
+
+        document.write("</tr>")
+        document.write("<td element id=tableTitle>")
+
+
+
+        while (x <= 7) {
+            document.write(x + "<br>")
+            x++
+        }
+        document.write("</td>")
+
+
+
+        while (p <= 20) {
+            var i = 3;
+
+
+            document.write("<td>")
+
+            while (i <= 7) {
+
+                var sum = i * p;
+
+                document.write(i + "*" + p + "=" + sum + "<br>")
+                i++
+
+            }
+            document.write("</td>")
+
+            p += 3
+        }
+        document.write(" </table>")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
